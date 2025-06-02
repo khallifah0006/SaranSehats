@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaranSehat - Kardio</title>
+   <link href="styles.css" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="header-title">SaranSehat</h1>
+            <button id="menu-button" class="menu-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="main-menu" class="main-menu">
+        <div class="container main-menu-content">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="index.html" class="nav-link">Informasi Kesehatan</a>
+            <div class="dropdown">
+                <a href="#gerakan-olahraga" class="nav-link">Gerakan Olahraga &#9662;</a> <div class="dropdown-content">
+                    <a href="berenang.html">Berenang</a>
+                    <a href="bersepeda.html">Bersepeda</a>
+                    <a href="weightlifting.html">Weightlifting</a>
+                    <a href="berjalan.html">Berjalan</a>
+                    <a href="hiit.html">HIIT</a>
+                    <a href="kardio.html">Kardio</a>
+                    <a href="senam.html">Senam</a>
+                    <a href="yoga.html">Yoga</a>
+                </div>
+            </div>
+            <a href="tentangkami.html" class="nav-link">Tentang Kami</a>
+            
+        </div>
+    </nav>
+    </header>
+
+     
+ <main class="main-content">
+        <div class="container">
+            <article class="content-article">
+                <header class="article-header">
+                    <h1 class="section-title">Kardio: Kunci Kesehatan Jantung dan Stamina</h1>
+                    <div class="hero-image">
+                        <img src="img/kardio.jpg" alt="Orang sedang kardio" class="responsive-image">
+                    </div>
+                </header>
+
+                <section class="intro-section">
+               <p class="content-text">
+            Latihan kardio, atau latihan kardiovaskular, adalah jenis aktivitas fisik yang meningkatkan detak jantung dan pernapasan Anda. Ini adalah fondasi dari setiap program kebugaran yang sehat, berfokus pada penguatan jantung dan paru-paru Anda.
+        </p>
+        <p class="content-text">
+            Manfaat kardio sangat luas, termasuk peningkatan kesehatan jantung, penurunan tekanan darah, peningkatan daya tahan, manajemen berat badan, dan peningkatan suasana hati. Contoh latihan kardio meliputi berlari, berenang, bersepeda, menari, dan menggunakan mesin elips.
+        </p>
+        <p class="content-text">
+            Disarankan untuk melakukan setidaknya 150 menit latihan kardio intensitas sedang atau 75 menit intensitas tinggi setiap minggu. Pastikan untuk memulai dengan pemanasan dan mengakhiri dengan pendinginan untuk memaksimalkan manfaat dan mencegah cedera.
+        </p>
+                </section>
+
+                <section class="info-section">
+                    <h2 class="section-subtitle">Alasan Mengapa kardio Itu Penting</h2>
+                    <ul class="info-list">
+       <li>Meningkatkan daya tahan jantung dan paru-paru.</li>
+      <li>Membakar kalori dan membantu menjaga berat badan ideal.</li>
+      <li>Meningkatkan kesehatan mental dan mood.</li>
+    </ul>
+                </section>
+
+                <section class="info-section">
+                    <h2 class="section-subtitle">Manfaat kardio bagi Kesehatan</h2>
+                    <ul class="info-list">
+        <li>Menurunkan risiko penyakit jantung.</li>
+      <li>Menurunkan tekanan darah dan kadar kolesterol.</li>
+      <li>Memperbaiki metabolisme tubuh.</li>
+      <li>Meningkatkan kualitas tidur.</li>
+    </ul>
+                </section>
+
+                <section class="info-section">
+                    <h2 class="section-subtitle">Persiapan Sebelum kardio</h2>
+                    <ul class="info-list">
+      <li><strong>Peralatan:</strong> sepatu olahraga, pakaian yang nyaman, air minum.</li>
+      <li><strong>Pemanasan:</strong> gerakan dinamis seperti lari di tempat dan stretching ringan.</li>
+     </ul>
+                </section>
+
+
+                <section class="info-section">
+                    <h2 class="section-subtitle">Jenis-jenis Latihan Kardio</h2>
+                    <ul class="info-list">
+       <li>Lari</li>
+      <li>Skipping</li>
+      <li>Bersepeda</li>
+      <li>Jogging</li>
+      <li>Berenang</li>
+     </ul>
+                </section>
+
+
+                <section class="info-section">
+                    <h2 class="section-subtitle">Tips Tambahan</h2>
+                    <ul class="info-list">
+      <li>Latihan secara teratur minimal 30 menit per sesi.</li>
+      <li>Sesuaikan intensitas dengan kemampuan tubuh.</li>
+      <li>Jangan lupa minum air putih setelah latihan.</li>
+     </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 SaranSehat. Semua Hak Dilindungi.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Kebijakan Privasi</a>
+                    <a href="#" class="footer-link">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+        const menuButton = document.getElementById('menu-button');
+        const mainMenu = document.getElementById('main-menu');
+
+        if (menuButton && mainMenu) {
+            menuButton.addEventListener('click', () => {
+                mainMenu.classList.toggle('show');
+                menuButton.setAttribute('aria-expanded', 
+                    mainMenu.classList.contains('show') ? 'true' : 'false'
+                );
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mainMenu.contains(e.target) && !menuButton.contains(e.target)) {
+                    mainMenu.classList.remove('show');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // Handle dropdown on mobile
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdown = document.querySelector('.dropdown');
+        
+        if (dropdownToggle && dropdown) {
+            dropdownToggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

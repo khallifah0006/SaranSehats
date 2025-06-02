@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaranSehat - Beranda</title>
+    <link href="homepagestyles.css" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="header-title">SaranSehat</h1>
+            <button id="menu-button" class="menu-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="main-menu" class="main-menu">
+        <div class="container main-menu-content">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="#informasi-kesehatan" class="nav-link">Informasi Kesehatan</a>
+            <div class="dropdown">
+                <a href="#gerakan-olahraga" class="nav-link">Gerakan Olahraga &#9662;</a> <div class="dropdown-content">
+                    <a href="berenang.html">Berenang</a>
+                    <a href="bersepeda.html">Bersepeda</a>
+                    <a href="weightlifting.html">Weightlifting</a>
+                    <a href="berjalan.html">Berjalan</a>
+                    <a href="hiit.html">HIIT</a>
+                    <a href="kardio.html">Kardio</a>
+                    <a href="senam.html">Senam</a>
+                    <a href="yoga.html">Yoga</a>
+                </div>
+            </div>
+            <a href="tentangkami.html" class="nav-link">Tentang Kami</a>
+            
+        </div>
+    </nav>
+    </header>
+
+    
+
+    <main class="main-content container">
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/yoga.jpg" alt="Orang berolahraga di luar ruangan" class="carousel-item-image" onerror="this.onerror=null;this.src='https://placehold.co/1200x400/87CEEB/FFFFFF?text=Hidup+Sehat';">
+                        <div class="carousel-overlay">
+                            <p>Mulai Gaya Hidup Sehat Anda Sekarang!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/weight-training.jpg" alt="Peralatan kebugaran di gym" class="carousel-item-image" onerror="this.onerror=null;this.src='https://placehold.co/1200x400/90EE90/FFFFFF?text=Kebugaran+Optimal';">
+                        <div class="carousel-overlay">
+                            <p>Capai Kebugaran Optimal Bersama Kami</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/senam.jpg" alt="Makanan sehat dan buah-buahan" class="carousel-item-image" onerror="this.onerror=null;this.src='https://placehold.co/1200x400/FFD700/FFFFFF?text=Nutrisi+Tepat';">
+                        <div class="carousel-overlay">
+                            <p>Nutrisi Tepat untuk Energi Maksimal</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+  <section class="carousel-section" style="text-align: center;">
+          <h2 class="section-subtitle" style="color: #1e40af;">
+  Let's get fit the smart way. Isi data kamu, dan kita kasih workout-nya!
+</h2>
+ <a href="tes.html" class="btn-primary">Ikuti Tes Sekarang!</a>
+        </section>
+      <section id="informasi-kesehatan" class="carousel-section">
+            <h2 class="section-title">Informasi Kesehatan Terkini</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title">Pentingnya Hidrasi</h3>
+                    <p class="card-text">Minum air yang cukup membantu menjaga fungsi organ tubuh, mengatur suhu, dan melumasi sendi. Targetkan 8 gelas air per hari.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Gizi Seimbang</h3>
+                    <p class="card-text">Konsumsi makanan bergizi seimbang yang kaya akan buah, sayuran, protein tanpa lemak, dan biji-bijian untuk mendukung kesehatan tubuh secara menyeluruh.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Memahami Indeks Massa Tubuh (BMI)</h3>
+                    <p class="card-text">BMI adalah ukuran yang menggunakan tinggi dan berat badan Anda untuk menentukan apakah berat badan Anda sehat. Ini dapat membantu menilai risiko kesehatan terkait berat badan.</p>
+                    </div>
+                      <div class="card">
+    <h3 class="card-title">Pentingnya Aktivitas Fisik</h3>
+    <p class="card-text">Olahraga rutin membantu meningkatkan kebugaran jantung, memperkuat otot dan tulang, serta mengurangi risiko penyakit kronis. Cobalah untuk aktif minimal 30 menit setiap hari.</p>
+</div>
+
+            </div>
+        </section>
+
+      
+
+         <section id="gerakan-olahraga" class="carousel-section">
+            <h2 class="section-title">Gerakan Olahraga Pilihan</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="img/berenang.jpg" alt="Orang berenang di kolam" >
+                    <h3 class="card-title">Berenang</h3>
+                    <p class="card-text">Olahraga seluruh tubuh yang sangat baik untuk kardio dan kekuatan otot tanpa beban sendi yang berlebihan.</p>
+                    <a href="berenang.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+ <img src="img/sepeda.jpg" alt="Orang berenang di kolam" >
+                    <h3 class="card-title">Bersepeda</h3>
+                    <p class="card-text">Cara yang bagus untuk meningkatkan kebugaran kardiovaskular dan memperkuat kaki Anda.</p>
+                    <a href="bersepeda.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+                     <img src="img/weight-training.jpg" alt="Orang berenang di kolam" >
+                    <h3 class="card-title">Weightlifting</h3>
+                    <p class="card-text">Membangun massa otot, meningkatkan kekuatan, dan mempercepat metabolisme.</p>
+                    <a href="weightlifting.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+                    <img src="img/berjalan.jpg" alt="Orang berenang di kolam" >
+                     <h3 class="card-title">Berjalan</h3>
+                    <p class="card-text">Aktivitas sederhana namun efektif untuk kesehatan jantung, manajemen berat badan, dan mengurangi stres.</p>
+                    <a href="berjalan.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+                  <img src="img/hiit.jpg" alt="Orang berenang di kolam" >
+                  <h3 class="card-title">HIIT</h3>
+                    <p class="card-text">Latihan interval intensitas tinggi yang membakar kalori secara efisien dan meningkatkan kebugaran kardio.</p>
+                    <a href="hiit.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+                   <img src="img/kardio.jpg" alt="Orang berenang di kolam" >
+                    <h3 class="card-title">Kardio</h3>
+                    <p class="card-text">Latihan yang meningkatkan detak jantung dan pernapasan, penting untuk kesehatan jantung dan paru-paru.</p>
+                    <a href="kardio.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+                  <img src="img/senam.jpg" alt="Orang berenang di kolam" >
+                   <h3 class="card-title">Senam</h3>
+                    <p class="card-text">Meningkatkan fleksibilitas, keseimbangan, dan kekuatan inti melalui serangkaian gerakan yang terkoordinasi.</p>
+                    <a href="senam.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+                <div class="card">
+                    <img src="img/yoga.jpg" alt="Orang berenang di kolam" >
+                     <h3 class="card-title">Yoga</h3>
+                    <p class="card-text">Menggabungkan postur fisik, teknik pernapasan, dan meditasi untuk meningkatkan kesehatan fisik dan mental.</p>
+                    <a href="yoga.html" class="btn-primary btn-card-link">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DBSFIT. Semua Hak Dilindungi.</p>
+            <div class="footer-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+      
+    // JavaScript for Carousel
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function moveSlide(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("myButton");
+    if (button) {
+        button.addEventListener("click", () => {
+            console.log("Button clicked");
+        });
+    }
+});
+
+
+// Auto-advance carousel
+let autoSlideInterval = setInterval(() => {
+    moveSlide(1);
+}, 5000); // Change slide every 5 seconds
+
+// Pause auto-advance on hover
+const carouselContainer = document.querySelector('.carousel-container');
+carouselContainer.addEventListener('mouseenter', () => {
+    clearInterval(autoSlideInterval);
+});
+carouselContainer.addEventListener('mouseleave', () => {
+    autoSlideInterval = setInterval(() => {
+        moveSlide(1);
+    }, 5000);
+});
+
+// Initial slide display
+showSlide(currentSlide);
+
+// JavaScript for Mobile Menu Toggle (keeping this since it's for the main menu, not dropdown)
+const menuButton = document.getElementById('menu-button');
+const mainMenu = document.getElementById('main-menu');
+
+menuButton.addEventListener('click', () => {
+    mainMenu.classList.toggle('show');
+});
+
+// Close menu when a link is clicked (for mobile) - simplified version
+document.querySelectorAll('#main-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+            mainMenu.classList.remove('show');
+        }
+    });
+});
+    </script>
+  
+  <script src="./bundle.js" defer></script>
+</body>
+</html>

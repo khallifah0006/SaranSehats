@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaranSehat - Rekomendasi Workout</title>
+    <link href="tes.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="header-title">SaranSehat</h1>
+            <button id="menu-button" class="menu-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+            </button>
+        </div>
+         <nav id="main-menu" class="main-menu">
+        <div class="container main-menu-content">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="index.html" class="nav-link">Informasi Kesehatan</a>
+            <div class="dropdown">
+                <a href="#gerakan-olahraga" class="nav-link">Gerakan Olahraga &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="berenang.html">Berenang</a>
+                    <a href="bersepeda.html">Bersepeda</a>
+                    <a href="weightlifting.html">Weightlifting</a>
+                    <a href="berjalan.html">Berjalan</a>
+                    <a href="hiit.html">HIIT</a>
+                    <a href="kardio.html">Kardio</a>
+                    <a href="senam.html">Senam</a>
+                    <a href="yoga.html">Yoga</a>
+                </div>
+            </div>
+            <a href="tentangkami.html" class="nav-link">Tentang Kami</a>
+        </div>
+    </nav>
+    </header>
+
+   
+
+    <main class="main-content">
+        <div class="form-container">
+            <h1 class="section-title">Rekomendasi Workout Personal</h1>
+
+            <form id="recommendForm">
+                <label>Umur:</label>
+                <input type="number" name="age" min="1" max="120" required />
+
+                <label>Jenis Kelamin:</label>
+                <select name="gender" required>
+                    <option value="">Pilih jenis kelamin</option>
+                    <option value="Male">Laki-laki</option>
+                    <option value="Female">Perempuan</option>
+                </select>
+
+                <label>Tinggi Badan (cm):</label>
+                <input type="number" name="height" required />
+
+                <label>Berat Badan (kg):</label>
+                <input type="number" name="weight" required />
+
+                <div class="button-container">
+                    <button type="submit">Dapatkan Rekomendasi</button>
+                    <button type="button" id="saveBtn" disabled>Simpan Rekomendasi</button>
+                </div>
+            </form>
+
+            <div id="result"></div>
+            
+            <div id="savedWorkouts">
+                <h2 style="color: #1e40af; font-size: 1.5rem; margin-bottom: 1rem;">Riwayat Latihan</h2>
+                <button id="showSavedBtn">Tampilkan Riwayat</button>
+                <div id="savedWorkoutsList"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SaranSehat. Semua Hak Dilindungi.</p>
+            <div class="footer-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+        const menuButton = document.getElementById('menu-button');
+        const mainMenu = document.getElementById('main-menu');
+
+        if (menuButton && mainMenu) {
+            menuButton.addEventListener('click', () => {
+                mainMenu.classList.toggle('show');
+                menuButton.setAttribute('aria-expanded', 
+                    mainMenu.classList.contains('show') ? 'true' : 'false'
+                );
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mainMenu.contains(e.target) && !menuButton.contains(e.target)) {
+                    mainMenu.classList.remove('show');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // Handle dropdown on mobile
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdown = document.querySelector('.dropdown');
+        
+        if (dropdownToggle && dropdown) {
+            dropdownToggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+    </script>
+    <script src="./bundle.js" defer></script>
+</body>
+</html>
