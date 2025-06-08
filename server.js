@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
-const PYTHON_API = "https://dbsfitml-production.up.railway.app";
+const PYTHON_API = " http://localhost:5000";
 
 // CORS middleware
 app.use(cors({

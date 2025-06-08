@@ -1,9 +1,5 @@
 
-
-
-
-// API base URL dan fungsi-fungsi API
-const API_BASE_URL = "https://serverdbsfit-production.up.railway.app";
+const API_BASE_URL = " http://localhost:3000";
 
 
 async function getRecommendations(userData) {
