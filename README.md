@@ -13,7 +13,7 @@ Berikut adalah langkah-langkah untuk menjalankan website **Saran Sehat** secara 
 
 1. Buka terminal dan navigasikan ke folder **backend** proyek:
   ```
-   cd ML
+  cd ML
   ```
 2. Jalankan perintah berikut untuk menginstal dependensi Python:
 ```
